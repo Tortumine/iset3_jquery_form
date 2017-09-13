@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery form</title>
+        <meta charset="UTF-8">
+
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/enregistrement.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-group col-md-6">
+                <form class="form" method="post" action="#">
+                    <h2>Formulaire</h2>
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" class="form-control" name="dname" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Numéro telephone GSM:</label>
+                        <input type="number" class="form-control" name="numerogsm" id="numerogsm" min="32000000000" max="32999999999" value="32000000000">
+                    </div>
+                    <div class="form-group">
+                        <label>Numéro telephone fixe:</label>
+                        <input type="range" class="form-control" name="numerofix" id="numerofix" min="320000000" max="329999999" value="320000000">
+                        <span id="majnumfix">320000000</span>
+                    </div>
+                    <!--<div class="form-group">
+                        <label>Numéro fax :</label>
+                        <br> <input type="button" class="btn btn-primary" id="add" value="+">
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                        <span id="majnumfax">320000000</span>
+
+                    </div> -->
+                    <div class="form-group">
+                        <label>Email :</label>
+                        <input type="text" class="form-control" name="demail" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Naissance :</label>
+                        <input type="date" class="form-control" name="dnaissance" id="naissance">
+                    </div>
+                    <div class="form-group">
+                        <label>Password :</label>
+                        <input type="password" class="form-control" name="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password :</label>
+                        <input type="password" class="form-control" name="cpassword" id="cpassword">
+                    </div>
+                    <input type="button" class="btn btn-primary" name="valider" id="valider" value="Valider">
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Liste crée</h2>
+                <p>Liste des utilisateurs enregistrés</p>
+                <ul class="list-group">
+
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
